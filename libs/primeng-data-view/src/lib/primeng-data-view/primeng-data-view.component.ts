@@ -27,7 +27,7 @@ export interface Product {
   styleUrl: './primeng-data-view.component.scss',
 })
 export class PrimengDataViewComponent {
-  layout: 'grid' | 'list' = 'grid'
+  layout: 'grid' | 'list' = 'list'
 
   products!: Product[];
 
