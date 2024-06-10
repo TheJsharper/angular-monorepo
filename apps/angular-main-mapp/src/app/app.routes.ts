@@ -14,4 +14,10 @@ export const appRoutes: Route[] = [
     
     
     },
+    {
+        path:'mapp-org-chart',
+        loadComponent: ()=> import('@angular-monorepo/primeng-org-chart').then( c => c.PrimengOrgChartComponent),
+    
+    
+    },
 ];

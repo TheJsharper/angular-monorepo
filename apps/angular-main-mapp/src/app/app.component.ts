@@ -37,9 +37,12 @@ export class AppComponent implements OnInit {
         icon: 'pi pi-search',
         items: [
           {
-            label: 'Core',
+            label: 'Org Chart',
             icon: 'pi pi-bolt',
-            shortcut: '⌘+S'
+            shortcut: '⌘+S'         ,
+            command: () => {
+              this.router.navigate(['/mapp-org-chart']);
+            }
           },
           {
             label: 'Data View',
