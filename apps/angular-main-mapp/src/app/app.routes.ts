@@ -20,4 +20,10 @@ export const appRoutes: Route[] = [
     
     
     },
+    {
+        path:'mapp-timeline',
+        loadComponent: ()=> import('@angular-monorepo/primeng-timeline').then( c => c.PrimengTimelineComponent),
+    
+    
+    },
 ];

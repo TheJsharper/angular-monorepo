@@ -52,12 +52,17 @@ export class AppComponent implements OnInit {
             command: () => {
               this.router.navigate(['/mapp-data-view']);
             }
-
-          },
-          {
-            label: 'UI Kit',
-            icon: 'pi pi-pencil',
-            shortcut: '⌘+U'
+            
+            },
+            {
+              label: 'Timeline',
+              icon: 'pi pi-pencil',
+              shortcut: '⌘+U'
+              ,
+              command: () => {
+                this.router.navigate(['/mapp-timeline']);
+              }
+            
           },
           {
             separator: true
