@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-monorepo/primeng-table": ["libs/primeng-table/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
