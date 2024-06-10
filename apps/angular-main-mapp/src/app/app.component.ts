@@ -30,11 +30,7 @@ export class AppComponent implements OnInit {
       },
       {
         label: 'Features',
-        icon: 'pi pi-star'
-      },
-      {
-        label: 'Projects',
-        icon: 'pi pi-search',
+        icon: 'pi pi-star',
         items: [
           {
             label: 'Org Chart',
@@ -77,6 +73,16 @@ export class AppComponent implements OnInit {
             }
           
         },
+        {
+          label: 'Table',
+          icon: 'pi pi-pencil',
+          shortcut: '⌘+T'
+          ,
+          command: () => {
+            this.router.navigate(['/mapp-table']);
+          }
+        
+      },
         ]
       },
       {
