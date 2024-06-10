@@ -21,6 +21,9 @@
       "@angular-monorepo/primeng-org-chart": [
         "libs/primeng-org-chart/src/index.ts"
       ],
+      "@angular-monorepo/primeng-pick-list": [
+        "libs/primeng-pick-list/src/index.ts"
+      ],
       "@angular-monorepo/primeng-table": ["libs/primeng-table/src/index.ts"],
       "@angular-monorepo/primeng-timeline": [
         "libs/primeng-timeline/src/index.ts"

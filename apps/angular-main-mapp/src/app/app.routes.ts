@@ -26,4 +26,10 @@ export const appRoutes: Route[] = [
     
     
     },
+    {
+        path:'mapp-pick-list',
+        loadComponent: ()=> import('@angular-monorepo/primeng-pick-list').then( c => c.PrimengPickListComponent),
+    
+    
+    },
 ];

@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
           {
             label: 'Org Chart',
             icon: 'pi pi-bolt',
-            shortcut: '⌘+S'         ,
+            shortcut: '⌘+C'         ,
             command: () => {
               this.router.navigate(['/mapp-org-chart']);
             }
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
           {
             label: 'Data View',
             icon: 'pi pi-server',
-            shortcut: '⌘+B'
+            shortcut: '⌘+D'
             ,
             command: () => {
               this.router.navigate(['/mapp-data-view']);
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
             {
               label: 'Timeline',
               icon: 'pi pi-pencil',
-              shortcut: '⌘+U'
+              shortcut: '⌘+T'
               ,
               command: () => {
                 this.router.navigate(['/mapp-timeline']);
@@ -66,7 +66,17 @@ export class AppComponent implements OnInit {
           },
           {
             separator: true
-          }
+          },
+          {
+            label: 'Pick List',
+            icon: 'pi pi-pencil',
+            shortcut: '⌘+P'
+            ,
+            command: () => {
+              this.router.navigate(['/mapp-pick-list']);
+            }
+          
+        },
         ]
       },
       {
