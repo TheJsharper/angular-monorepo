@@ -42,9 +42,14 @@ export class AppComponent implements OnInit {
             shortcut: '⌘+S'
           },
           {
-            label: 'Blocks',
+            label: 'Data View',
             icon: 'pi pi-server',
             shortcut: '⌘+B'
+            ,
+            command: () => {
+              this.router.navigate(['/mapp-data-view']);
+            }
+
           },
           {
             label: 'UI Kit',

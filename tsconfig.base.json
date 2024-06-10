@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular-monorepo/primeng-data-view": [
+        "libs/primeng-data-view/src/index.ts"
+      ],
       "@angular-monorepo/primeng-table": ["libs/primeng-table/src/index.ts"]
     }
   },
