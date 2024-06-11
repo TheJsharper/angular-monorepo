@@ -90,6 +90,12 @@ export class AppComponent implements OnInit {
         icon: 'pi pi-envelope',
         badge: '3',
         command: ()=>{ this.router.navigate(['/mapp-contact'])}
+      },
+      {
+        label: 'libs',
+        icon: 'pi pi-envelope',
+        badge: '3',
+        command: ()=>{ this.router.navigate(['/mapp-libs'])}
       }
     ];
 

@@ -38,5 +38,11 @@ export const appRoutes: Route[] = [
     
     
     },
+     {
+        path:'mapp-libs',
+        loadComponent: ()=> import('@angular-monorepo/test-libs').then( c => c.TestLibsComponent),
+    
+    
+    },
     
 ];

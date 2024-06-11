@@ -30,7 +30,8 @@
       "@angular-monorepo/primeng-table": ["libs/primeng-table/src/index.ts"],
       "@angular-monorepo/primeng-timeline": [
         "libs/primeng-timeline/src/index.ts"
-      ]
+      ],
+      "@angular-monorepo/test-libs": ["libs/test-libs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
