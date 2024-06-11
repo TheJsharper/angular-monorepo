@@ -32,4 +32,11 @@ export const appRoutes: Route[] = [
     
     
     },
+     {
+        path:'mapp-contact',
+        loadComponent: ()=> import('@angular-monorepo/primeng-form-contact').then( c => c.PrimengFormContactComponent),
+    
+    
+    },
+    
 ];

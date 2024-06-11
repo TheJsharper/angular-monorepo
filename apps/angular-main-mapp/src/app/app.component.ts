@@ -88,7 +88,8 @@ export class AppComponent implements OnInit {
       {
         label: 'Contact',
         icon: 'pi pi-envelope',
-        badge: '3'
+        badge: '3',
+        command: ()=>{ this.router.navigate(['/mapp-contact'])}
       }
     ];
 

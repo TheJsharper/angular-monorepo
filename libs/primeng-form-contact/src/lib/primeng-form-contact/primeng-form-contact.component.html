@@ -1,0 +1,53 @@
+<div class="card">
+<p-fieldset>
+<ng-template pTemplate="header">
+    <div class="flex align-items-center gap-2 px-2">
+        <p-avatar 
+            image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+            shape="circle" />
+        <span class="font-bold">Amy Elsner</span>
+    </div>
+</ng-template>
+<form [formGroup]="form" >
+<div class="flex flex-column gap-2" [formGroup]="form">
+    <label for="username">Username</label>
+    <input  type="text"
+        pInputText 
+        id="username" 
+        aria-describedby="username-help" formControlName="userName" 
+        />
+        @if (form.get('userName')?.invalid && form.get('userName')?.dirty ) {
+
+            <small id="username-help">
+                Enter your username 
+            </small>
+        }
+</div>
+<div class="flex flex-column gap-2">
+
+<label for="message">Message</label>
+    <textarea id="message"
+        rows="5"
+        cols="35" 
+        pInputTextarea 
+        formControlName="message">
+    </textarea>
+ @if (form.get('message')?.invalid && form.get('message')?.dirty) {
+
+            <small id="username-help">
+                Enter your message
+            </small>
+        }
+</div>
+<div class="flex flex-column ga-2 " style="margin-top: 1.4rem;">
+    <button  [disabled]="form.invalid" style="margin-left: auto;" (click)="onSubmit()"
+    pButton 
+    pRipple 
+    label="Submit" 
+    class="p-button-success"> 
+</button>
+</div>
+</form>
+</p-fieldset>
+
+</div>

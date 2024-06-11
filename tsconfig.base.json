@@ -18,6 +18,9 @@
       "@angular-monorepo/primeng-data-view": [
         "libs/primeng-data-view/src/index.ts"
       ],
+      "@angular-monorepo/primeng-form-contact": [
+        "libs/primeng-form-contact/src/index.ts"
+      ],
       "@angular-monorepo/primeng-org-chart": [
         "libs/primeng-org-chart/src/index.ts"
       ],
